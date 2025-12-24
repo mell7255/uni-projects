@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>رزومه ملیکا محمدبیگی - نسخه Bootstrap</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Optional Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            direction: rtl;
+        }
+        .progress-bar {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="#">ملیکا محمدبیگی</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#about">درباره من</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">مهارت‌ها</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">تحصیلات</a></li>
+        <li class="nav-item"><a class="nav-link" href="#goal">هدف</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div id="resumeCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://via.placeholder.com/1200x300?text=رزومه+ملیکا" class="d-block w-100" alt="Slide 1">
+    </div>
+    <div class="carousel-item">
+      <img src="https://via.placeholder.com/1200x300?text=مهارت+ها" class="d-block w-100" alt="Slide 2">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#resumeCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#resumeCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Container اصلی رزومه -->
+<div class="container">
+
+  <div class="row mb-4">
+    <!-- درباره من -->
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body" id="about">
+          <h5 class="card-title">درباره من</h5>
+          <p class="card-text">
+            دانشجوی ترم اول مهندسی کامپیوتر با علاقه شدید به برنامه‌نویسی و توسعه وب.
+            دنبال یادگیری پروژه‌های عملی و تکنولوژی‌های جدید هستم.
+          </p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+            بیشتر بدانید
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- تحصیلات -->
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body" id="education">
+          <h5 class="card-title">تحصیلات</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">مهندسی کامپیوتر - دانشگاه آزاد قزوین</li>
+            <li class="list-group-item">ترم اول</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- مهارت‌ها -->
+  <div class="row mb-4" id="skills">
+    <div class="col-12">
+      <div class="card shadow-sm p-3">
+        <h5 class="card-title">مهارت‌ها</h5>
+        <p>HTML</p>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 60%">60%</div>
+        </div>
+        <p>CSS</p>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 55%">55%</div>
+        </div>
+        <p>C++</p>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: 50%">50%</div>
+        </div>
+        <p>Python</p>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: 50%">50%</div>
+        </div>
+        <p>English</p>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-primary" role="progressbar" style="width: 90%">90%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- هدف -->
+  <div class="row mb-4" id="goal">
+    <div class="col-12">
+      <div class="card shadow-sm p-3">
+        <h5 class="card-title">هدف</h5>
+        <p>
+          تمرکز بر توسعه مهارت‌های برنامه‌نویسی و آماده شدن برای پروژه‌های واقعی.
+          علاقه‌مند به کار تیمی و یادگیری تکنولوژی‌های جدید هستم.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal درباره من -->
+<div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutModalLabel">درباره من</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        اینجا می‌توانید اطلاعات بیشتری درباره سوابق، علاقه‌مندی‌ها و انگیزه‌های من برای برنامه‌نویسی مشاهده کنید.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
